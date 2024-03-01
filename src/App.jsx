@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <nav className='navv'>
+    <nav >
       <input type="text" />
     </nav>
       <h1>hola mundooo</h1>
