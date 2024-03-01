@@ -7,6 +7,9 @@ function App() {
 
   return (
     <>
+    <nav className='navv'>
+      <input type="text" />
+    </nav>
       <h1>hola mundooo</h1>
        <button>enviar</button>
        
