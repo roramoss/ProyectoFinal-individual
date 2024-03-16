@@ -1,16 +1,32 @@
-
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
+  }
 
+  
+  
+  
+body{
+  max-width: 1900px;
+  margin: 0 auto; 
+   
 }
-
-
-header{
+  
+   .navnav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-}
+    background-color: #000000;
+    color: aliceblue;
+  } 
+  .btn-iniciar{
+    text-decoration: none;
+    display: flex;
+    color: aliceblue;
+    margin: 12px;
+  }
+  .navnav{ color: aliceblue;}
+  
+

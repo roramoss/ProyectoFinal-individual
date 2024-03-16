@@ -1,30 +1,43 @@
-import React from 'react'
-import { Outlet, Link } from 'react-router-dom'
 
+import {  Link, Outlet, useLocation } from "react-router-dom"
+ import Container from 'react-bootstrap/Container';
+ import Navbar from 'react-bootstrap/Navbar';
+ import BotonCarrito from '../Cart/Boton/BotonCarrito'
 
-function Navbar() {
-  return (
-    <>
-    <header>
-      <h1>Logo</h1>
-      <nav>
-        <Link to="/Login"> Iniciar sesion</Link>
-        <Link to="/Register">Registrarse</Link>
-      </nav>
-      <div className='user'>
-        <span className='username'>Rocio</span>
-        <button className='btn-logout'> crrar sesion</button>
-      </div>
-    </header>
-      
+ const Navbarrr = ()  => {
 
+    return(
+        <>
+        <Navbar className="navnav">
+        <Container >
+          <Navbar.Brand  >
 
-      <Outlet/>
-    </>
-  )
-}
+            <Link  to={"/"}>
+            <img
+              src="src/assets/assets.loginregister/img/WhatsApp_Image_2023-10-24_at_1.54.37_PM-removebg-preview.png"
+              width="80"
+              height="80"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+              
+              
+            />
 
+            </Link>
+           
+           
+          </Navbar.Brand>
+        </Container>
+        <Link to={"/login"} className="btn-iniciar"   > Inicia Sesion</Link>
+        <Link to={"/Registro"} className="btn-iniciar">Regístrate</Link>
+        
+      </Navbar>
+        
+        
+        
+        
+        </>
+    )
+ }
 
-
-export default Navbar
-
+export default Navbarrr
